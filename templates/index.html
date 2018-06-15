@@ -22,10 +22,10 @@
         <meta name="theme-color" content="#fff" />
         <!-- end-theme-color -->
 	<script src="{{ url_for('static',filename='assets/jquery.min.js') }}"></script> 
-	<script src="{{ url_for('static',filename='assets/skel.min.js') }}></script>
-	<script src="{{ url_for('static',filename='assets/util.js') }}></script>
-	<script src="{{ url_for('static',filename='assets/respond.min.js') }}></script>
-	<script src="{{ url_for('static',filename='assets/responsive.js') }}></script>
+	<script src="{{ url_for('static',filename='assets/skel.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/util.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/respond.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/responsive.js') }}"></script>
 	<link rel="stylesheet" href="{{ url_for('static',filename='assets/main.css') }}" />
         <title>PWA Fire Codelab Demo</title>
         <meta charset="utf-8">
@@ -58,7 +58,7 @@
                             
 	<div class="image" style="background-image: url(&quot;{{ url_for('static',filename='images/arthur.jpg') }}&quot;); background-position: center center;">
     
-		<img src="{{ url_for('static',filename='images/arthur.jpg') }} alt="" data-position="center center" 
+		<img src="{{ url_for('static',filename='images/arthur.jpg') }}" alt="" data-position="center center" 
                                 
    style="display: none;">
                             
@@ -109,8 +109,8 @@
     
     <article id="work" class="panel secondary inactive" style="display: none;">
            
-        <div class="image" style="background-image: url(&quot;images/pic04.jpg&quot;);background-position: center center;">
-        <img src="images/pic04.jpg" alt="" data-position="center center" style="display: none;">
+	    <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='images/pic04.jpg') }}&quot;);background-position: center center;">
+		    <img src="{{ url_for('static',filename='images/pic04.jpg') }}" alt="" data-position="center center" style="display: none;">
         </div> 
         <div class="content">
         <ul class="actions spinX"><li>
@@ -191,7 +191,7 @@
                 
             <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center bottom;">
                 
-            <img src="images/indeax.jpeg" alt="" data-position="bottom center" style="display: none;">
+		    <img src="{{ url_for('static',filename='images/indeax.jpeg') }}" alt="" data-position="bottom center" style="display: none;">
         
             </div><div class="content">
                 
